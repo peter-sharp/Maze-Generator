@@ -23,7 +23,7 @@ Class Maze
 	public function renderMaze(){
 		for($y = 0; $y < $this->height; $y++){
 			$row = array();
-			for($x = 0; $x < $this->height; $x++){
+			for($x = 0; $x < $this->width; $x++){
 				$cellType = $this->getCellValue(array($x,$y));
 				switch($cellType){
 					case 'solid' :
