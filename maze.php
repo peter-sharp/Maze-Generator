@@ -326,7 +326,7 @@ if (isset($argv)){
 	$arguments = array_slice($argv, 1, count($argv) );
 	if ($arguments){
 		
-		$maze = new Maze(20,20);
+		$maze = new Maze($arguments[0], $arguments[1]);
 		$maze->renderMaze();
 		//$methodName = array_shift(&$argV);
 		//call_user_func_array(array($maze,$methodName), $argv);
